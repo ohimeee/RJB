@@ -1,22 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
     <title>RJB Intro Page</title>
-</head> 
-<body>
-    <div class="bg-gray-100 w-screen flex items-center justify-center">
-        <h1 class="text-4xl font-bold">Welcome to RJB!</h1>
+  </head>
+  <body>
+    <div class="flex h-screen">
+      <aside class="relative flex-1 bg-red-500">
+        <div
+          class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black to-transparent"
+        ></div>
+      </aside>
+      <aside class="relative flex-1 bg-green-500">
+        <div
+          class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black to-transparent"
+        ></div>
+      </aside>
+      <aside class="relative flex-1 bg-blue-500">
+        <div
+          class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black to-transparent"
+        ></div>
+      </aside>
     </div>
-    <div class="flex">
-        <aside class="bg-red-500 h-screen w-1/3">
-        </aside>
-        <aside class="bg-green-500 h-screen w-1/3">
-        </aside>
-        <aside class="bg-blue-500 h-screen w-1/3">
-        </aside>
-    </div>
-</body>
+  </body>
 </html>
