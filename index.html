@@ -6,23 +6,31 @@
     <link href="./output.css" rel="stylesheet" />
     <title>RJB Intro Page</title>
   </head>
-  <body>
+  <body class="bg-black">
     <div class="flex h-screen">
-      <aside class="relative flex-1 bg-red-500">
-        <div
-          class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black to-transparent"
-        ></div>
-      </aside>
-      <aside class="relative flex-1 bg-green-500">
-        <div
-          class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black to-transparent"
-        ></div>
-      </aside>
-      <aside class="relative flex-1 bg-blue-500">
-        <div
-          class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black to-transparent"
-        ></div>
-      </aside>
+      <div class="relative flex-1 overflow-hidden bg-red-900 [clip-path:polygon(0_0,100%_0,95%_100%,0_100%)]">
+        <img
+        src="assets/left.jpg"
+          alt="Left Image"
+          class="absolute bottom-0 h-full w-full object-cover"
+        />
+      </div>
+
+      <div class="relative flex-1 overflow-hidden bg-green-900 [clip-path:polygon(5%_0,100%_0,95%_100%,0_100%)]">
+        <img
+          src="assets/center.jpg"
+          alt="Center Image"
+          class="absolute bottom-0 h-full w-full object-cover"
+        />
+      </div>
+
+      <div class="relative flex-1 overflow-hidden bg-blue-900 [clip-path:polygon(5%_0,100%_0,100%_100%,0_100%)]">
+        <img
+          src="assets/right.jpg"
+          alt="Right Image"
+          class="absolute bottom-0 h-full w-full object-cover"
+        />
+      </div>
     </div>
   </body>
 </html>
