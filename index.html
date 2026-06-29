@@ -7,59 +7,40 @@
     <title>RJB Intro Page</title>
   </head>
   <body class="bg-black">
-    <div class="flex h-screen gap-5">
-      <!-- Left Panel -->
-      <div
-        class="group relative flex flex-1 overflow-hidden transition-all duration-700 hover:flex-3"
-      >
-        <div class="relative flex-1">
-          <img src="assets/left.jpg" class="absolute inset-0 h-full w-full object-cover" />
+    <div class="relative h-screen">
+      <div class="flex h-full">
+        <!-- Left Panel -->
+        <div
+          class="group flex flex-1 overflow-hidden transition-all duration-700 hover:flex-[1.15]"
+        >
+          <img src="assets/left.jpg" class="h-full w-full object-cover" />
         </div>
-
-        <div class="w-0 bg-black/80 text-white transition-all duration-700 group-hover:w-80">
-          <h1 class="text-2xl font-bold">About Me</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quod,
-            quia, voluptates quibusdam voluptatibus quas quibusdam quae quibusdam. Quisquam, quod,
-            quia, voluptates quibusdam voluptatibus quas quibusdam quae quibusdam.
-          </p>
+        <!-- Center Panel -->
+        <div
+          class="group flex flex-1 overflow-hidden transition-all duration-700 hover:flex-[1.15]"
+        >
+          <img src="assets/center.jpg" class="h-full w-full object-cover" />
         </div>
-      </div>
-
-      <!-- Center Panel -->
-      <div
-        class="group relative flex flex-1 overflow-hidden transition-all duration-700 hover:flex-3"
-      >
-        <div class="relative flex-1">
-          <img src="assets/center.jpg" class="absolute inset-0 h-full w-full object-cover" />
-        </div>
-
-        <div class="w-0 bg-black/80 text-white transition-all duration-700 group-hover:w-80">
-          <h1 class="text-2xl font-bold">About Me</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quod,
-            quia, voluptates quibusdam voluptatibus quas quibusdam quae quibusdam. Quisquam, quod,
-            quia, voluptates quibusdam voluptatibus quas quibusdam quae quibusdam.
-          </p>
+        <!-- Right Panel -->
+        <div
+          class="group flex flex-1 overflow-hidden transition-all duration-700 hover:flex-[1.15]"
+        >
+          <img src="assets/right.jpg" class="h-full w-full object-cover" />
         </div>
       </div>
 
-      <!-- Right Panel -->
       <div
-        class="group relative flex flex-1 overflow-hidden transition-all duration-700 hover:flex-3"
+        class="absolute inset-0 z-10 bg-linear-to-t from-gray-950 via-transparent to-transparent pointer-events-none"
+      ></div>
+      <div
+        class="absolute inset-x-0 bottom-4 flex justify-center items-center z-20 pointer-events-none"
       >
-        <div class="relative flex-1">
-          <img src="assets/right.jpg" class="absolute inset-0 h-full w-full object-cover" />
-        </div>
-
-        <div class="w-0 bg-black/80 text-white transition-all duration-700 group-hover:w-80">
-          <h1 class="text-2xl font-bold">About Me</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quod,
-            quia, voluptates quibusdam voluptatibus quas quibusdam quae quibusdam. Quisquam, quod,
-            quia, voluptates quibusdam voluptatibus quas quibusdam quae quibusdam.
-          </p>
-        </div>
+        <p class="text-6xl font-bold text-center text-white">
+          Welcome to <br />
+          <span class="text-red-900">R</span>
+          <span class="text-green-900">J</span>
+          <span class="text-blue-900">B</span>
+        </p>
       </div>
     </div>
   </body>
