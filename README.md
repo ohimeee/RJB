@@ -2,6 +2,16 @@
 
 A simple interactive intro page for RJB, built with HTML, Tailwind CSS, and vanilla JavaScript.
 
+## Meaning
+
+RJB represents our first names:
+
+- R - Recca Lee Pendioday
+- J - Johnmarc Jayme
+- B - Bryan Kenth Estoesta
+
+The name RJB is inspired by RGB color. Since RGB stands for red, green, and blue, the theme of this project also uses red, green, and blue as its main visual identity.
+
 ## Features
 
 - Animated welcome screen
