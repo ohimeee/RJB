@@ -3,8 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link href="./output.css" rel="stylesheet" />
     <title>RJB Intro Page</title>
+    <style>
+      body {
+        font-family: "Inter", system-ui, sans-serif;
+      }
+
+      .font-display {
+        font-family: "Anton", Impact, sans-serif;
+      }
+    </style>
   </head>
 
   <body class="relative w-full h-screen overflow-hidden bg-black">
@@ -16,7 +31,7 @@
         class="flex flex-col items-center"
       >
         <p class="mb-3 text-2xl font-medium tracking-widest text-zinc-400">WELCOME TO</p>
-        <div class="mb-10 flex gap-5 text-9xl font-black">
+        <div class="font-display mb-10 flex gap-5 text-9xl">
           <span class="text-red-800 drop-shadow-[0_0_18px_rgba(127,29,29,0.55)]"> R </span>
           <span class="text-green-800 drop-shadow-[0_0_18px_rgba(6,95,70,0.55)]"> J </span>
           <span class="text-blue-800 drop-shadow-[0_0_18px_rgba(30,64,175,0.55)]"> B </span>
@@ -55,7 +70,7 @@
           id="recca-info"
           class="relative flex-0 w-0 overflow-hidden bg-linear-to-b from-black via-red-950 to-red-950 transition-all duration-700"
         >
-          <p class="text-5xl font-sfmono text-white text-center">Recca Lee Pendioday</p>
+          <p class="text-5xl font-bold text-white text-center">Recca Lee Pendioday</p>
           <p class="whitespace-pre-line text-3xl text-white flex items-left justify-left pl-15">
             Age: 19 Birthday: 2004-01-30
           </p>
@@ -81,7 +96,7 @@
           id="johnmarc-info"
           class="relative flex-0 w-0 overflow-hidden bg-linear-to-b from-black via-green-950 to-green-950 transition-all duration-700"
         >
-          <p class="text-5xl font-sfmono text-white text-center">Johnmarc Jayme</p>
+          <p class="text-5xl font-bold text-white text-center">Johnmarc Jayme</p>
           <p class="whitespace-pre-line text-3xl text-white flex items-left justify-left pl-15">
             Age: 19 Birthday: 2004-01-30
           </p>
@@ -107,7 +122,7 @@
           id="bryan-info"
           class="relative flex-0 w-0 overflow-hidden bg-linear-to-b from-black via-blue-950 to-blue-950 transition-all duration-700"
         >
-          <p class="text-5xl font-sfmono text-white text-center">Bryan Estoesta</p>
+          <p class="text-5xl font-bold text-white text-center">Bryan Estoesta</p>
           <p class="whitespace-pre-line text-3xl text-white flex items-left justify-left pl-15">
             Age: 19 Birthday: 2004-01-30
           </p>
