@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,33 +11,39 @@
       <div class="flex h-full">
         <!-- Left Panel -->
         <div
-          id="left-panel"
           class="group flex flex-1 overflow-hidden transition-all duration-700 hover:flex-[1.15]"
         >
-          <img
-            src="assets/left.jpg"
-            class="h-full w-full object-cover transition-all duration-700 hover:brightness-130"
-          />
+          <a href="#recca-info" class="h-full w-full">
+            <img
+              id="recca-img"
+              src="assets/left.jpg"
+              class="h-full w-full object-cover transition-all duration-700 hover:brightness-130"
+            />
+          </a>
         </div>
         <!-- Center Panel -->
         <div
-          id="center-panel"
           class="group flex flex-1 overflow-hidden transition-all duration-700 hover:flex-[1.15]"
         >
-          <img
-            src="assets/center.jpg"
-            class="h-full w-full object-cover transition-all duration-700 hover:brightness-130"
-          />
+          <a href="#johnmarc-info" class="h-full w-full">
+            <img
+              id="johnmarc-img"
+              src="assets/center.jpg"
+              class="h-full w-full object-cover transition-all duration-700 hover:brightness-130"
+            />
+          </a>
         </div>
         <!-- Right Panel -->
         <div
-          id="right-panel"
           class="group flex flex-1 overflow-hidden transition-all duration-700 hover:flex-[1.15]"
         >
-          <img
-            src="assets/right.jpg"
-            class="h-full w-full object-cover transition-all duration-700 hover:brightness-130"
-          />
+          <a href="#bryan-info" class="h-full w-full">
+            <img
+              id="bryan-img"
+              src="assets/right.jpg"
+              class="h-full w-full object-cover transition-all duration-700 hover:brightness-130"
+            />
+          </a>
         </div>
       </div>
 
@@ -53,49 +59,42 @@
         </div>
       </div>
 
-      <div id="recca-info" class="hidden relative h-screen bg-red-950 transiton-all duration-700">
-        <div
-          class="absolute inset-0 z-10 bg-linear-to-b from-black via-transparent to-transparent pointer-events-none"
+      <div
+        id="recca-info"
+        class="hidden relative h-screen bg-linear-to-b from-black via-red-950 to-red-950"
+      >
+        <p id="name" class="text-5xl font-sfmono text-white text-center">Recca Lee Pendioday</p>
+        <p
+          id="info"
+          class="whitespace-pre-line text-3xl text-white flex items-left justify-left pl-15"
         >
-          <p id="name" class="text-5xl font-sfmono text-white text-center">Recca Lee Pendioday</p>
-          <p
-            id="info"
-            class="whitespace-pre-line text-3xl text-white flex items-left justify-left pl-15"
-          >
-            Age: 19 Birthday: 2004-01-30
-          </p>
-        </div>
+          Age: 19 Birthday: 2004-01-30
+        </p>
       </div>
-
-      <div id="johnmarc-info" class="hidden relative h-screen bg-green-950 transiton-all duration-700">
-        <div
-          class="absolute inset-0 z-10 bg-linear-to-b from-black via-transparent to-transparent pointer-events-none"
+      <div
+        id="johnmarc-info"
+        class="hidden relative h-screen bg-linear-to-b from-black via-green-950 to-green-950"
+      >
+        <p id="name" class="text-5xl font-sfmono text-white text-center">Johnmarc Jayme</p>
+        <p
+          id="info"
+          class="whitespace-pre-line text-3xl text-white flex items-left justify-left pl-15"
         >
-          <p id="name" class="text-5xl font-sfmono text-white text-center">Johnmarc Jayme</p>
-          <p
-            id="info"
-            class="whitespace-pre-line text-3xl text-white flex items-left justify-left pl-15"
-          >
-            Age: 19 Birthday: 2004-01-30
-          </p>
-        </div>
+          Age: 19 Birthday: 2004-01-30
+        </p>
       </div>
-
-      <div id="bryan-info" class="hidden relative h-screen bg-blue-950 transiton-all duration-700">
-        <div
-          class="absolute inset-0 z-10 bg-linear-to-b from-black via-transparent to-transparent pointer-events-none"
+      <div
+        id="bryan-info"
+        class="hidden relative h-screen bg-linear-to-b from-black via-blue-950 to-blue-950"
+      >
+        <p id="name" class="text-5xl font-sfmono text-white text-center">Bryan Kenth Estoesta</p>
+        <p
+          id="info"
+          class="whitespace-pre-line text-3xl text-white flex items-left justify-left pl-15"
         >
-          <p id="name" class="text-5xl font-sfmono text-white text-center">Bryan Kenth Estoesta</p>
-          <p
-            id="info"
-            class="whitespace-pre-line text-3xl text-white flex items-left justify-left pl-15"
-          >
-            Age: 19 Birthday: 2004-01-30
-          </p>
-        </div>
+          Age: 19 Birthday: 2004-01-30
+        </p>
       </div>
-
-
     </div>
   </body>
   <script src="index.js"></script>

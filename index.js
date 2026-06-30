@@ -1,17 +1,13 @@
-rightPanel = document.getElementById("right-panel");
-leftPanel = document.getElementById("left-panel");
-centerPanel = document.getElementById("center-panel");
+const reccaInfo = document.getElementById("recca-info");
+const johnmarcInfo = document.getElementById("johnmarc-info");
+const bryanInfo = document.getElementById("bryan-info");
 
-reccaInfo = document.getElementById("recca-info");
-johnmarcInfo = document.getElementById("johnmarc-info");
-bryanInfo = document.getElementById("bryan-info");
-
-addEventListener("click", (e) => {
-  if (e.target.id === "recca") {
-    reccaInfo.classList.remove("hidden");
-  } else if (e.target.id === "johnmarc") {
-    johnmarcInfo.classList.remove("hidden");
-  } else if (e.target.id === "bryan") {
-    bryanInfo.classList.remove("hidden");
+document.addEventListener("click", (e) => {
+  if (e.target.id === "recca-img") {
+    reccaInfo.classList.toggle("hidden");
+  } else if (e.target.id === "johnmarc-img") {
+    johnmarcInfo.classList.toggle("hidden");
+  } else if (e.target.id === "bryan-img") {
+    bryanInfo.classList.toggle("hidden");
   }
 });
