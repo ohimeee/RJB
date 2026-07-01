@@ -14,53 +14,38 @@ const reccaInfo = document.getElementById("recca-info");
 const johnmarcInfo = document.getElementById("johnmarc-info");
 const bryanInfo = document.getElementById("bryan-info");
 
-const reccaClose = document.getElementById("recca-close");
-const johnmarcClose = document.getElementById("johnmarc-close");
-const bryanClose = document.getElementById("bryan-close");
-
+// Welcome screen
 startButton.addEventListener("click", () => {
-    welcomeContainer.classList.add("translate-y-full", "opacity-0");
-    panelContainer.classList.remove("-translate-y-full");
+  welcomeContainer.classList.add("translate-y-full", "opacity-0");
+  panelContainer.classList.remove("-translate-y-full");
 });
 
+// Toggle function
 function togglePanel(infoPanel, panelA, panelB) {
+  panelA.classList.toggle("flex-0");
+  panelA.classList.toggle("flex-1");
+  panelA.classList.toggle("w-0");
 
-    panelA.classList.toggle("flex-0");
-    panelA.classList.toggle("flex-1");
-    panelA.classList.toggle("w-0");
+  panelB.classList.toggle("flex-0");
+  panelB.classList.toggle("flex-1");
+  panelB.classList.toggle("w-0");
 
-    panelB.classList.toggle("flex-0");
-    panelB.classList.toggle("flex-1");
-    panelB.classList.toggle("w-0");
-
-    infoPanel.classList.toggle("flex-0");
-    infoPanel.classList.toggle("flex-2");
-    infoPanel.classList.toggle("w-0");
+  infoPanel.classList.toggle("flex-0");
+  infoPanel.classList.toggle("flex-2");
+  infoPanel.classList.toggle("w-0");
 }
 
 // Recca
 reccaImg.addEventListener("click", () => {
-    togglePanel(reccaInfo, johnmarcPanel, bryanPanel);
-});
-
-reccaClose.addEventListener("click", () => {
-    togglePanel(reccaInfo, johnmarcPanel, bryanPanel);
+  togglePanel(reccaInfo, johnmarcPanel, bryanPanel);
 });
 
 // Johnmarc
 johnmarcImg.addEventListener("click", () => {
-    togglePanel(johnmarcInfo, reccaPanel, bryanPanel);
-});
-
-johnmarcClose.addEventListener("click", () => {
-    togglePanel(johnmarcInfo, reccaPanel, bryanPanel);
+  togglePanel(johnmarcInfo, reccaPanel, bryanPanel);
 });
 
 // Bryan
 bryanImg.addEventListener("click", () => {
-    togglePanel(bryanInfo, reccaPanel, johnmarcPanel);
-});
-
-bryanClose.addEventListener("click", () => {
-    togglePanel(bryanInfo, reccaPanel, johnmarcPanel);
+  togglePanel(bryanInfo, reccaPanel, johnmarcPanel);
 });
