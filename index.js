@@ -14,49 +14,53 @@ const reccaInfo = document.getElementById("recca-info");
 const johnmarcInfo = document.getElementById("johnmarc-info");
 const bryanInfo = document.getElementById("bryan-info");
 
+const reccaClose = document.getElementById("recca-close");
+const johnmarcClose = document.getElementById("johnmarc-close");
+const bryanClose = document.getElementById("bryan-close");
+
 startButton.addEventListener("click", () => {
-  welcomeContainer.classList.add("translate-y-full", "opacity-0");
-  panelContainer.classList.remove("-translate-y-full");
+    welcomeContainer.classList.add("translate-y-full", "opacity-0");
+    panelContainer.classList.remove("-translate-y-full");
 });
 
+function togglePanel(infoPanel, panelA, panelB) {
+
+    panelA.classList.toggle("flex-0");
+    panelA.classList.toggle("flex-1");
+    panelA.classList.toggle("w-0");
+
+    panelB.classList.toggle("flex-0");
+    panelB.classList.toggle("flex-1");
+    panelB.classList.toggle("w-0");
+
+    infoPanel.classList.toggle("flex-0");
+    infoPanel.classList.toggle("flex-2");
+    infoPanel.classList.toggle("w-0");
+}
+
+// Recca
 reccaImg.addEventListener("click", () => {
-  johnmarcPanel.classList.toggle("flex-0");
-  johnmarcPanel.classList.toggle("flex-1");
-  johnmarcPanel.classList.toggle("w-0");
-
-  bryanPanel.classList.toggle("flex-0");
-  bryanPanel.classList.toggle("flex-1");
-  bryanPanel.classList.toggle("w-0");
-
-  reccaInfo.classList.toggle("flex-0");
-  reccaInfo.classList.toggle("flex-2");
-  reccaInfo.classList.toggle("w-0");
+    togglePanel(reccaInfo, johnmarcPanel, bryanPanel);
 });
 
+reccaClose.addEventListener("click", () => {
+    togglePanel(reccaInfo, johnmarcPanel, bryanPanel);
+});
+
+// Johnmarc
 johnmarcImg.addEventListener("click", () => {
-  reccaPanel.classList.toggle("flex-0");
-  reccaPanel.classList.toggle("flex-1");
-  reccaPanel.classList.toggle("w-0");
-
-  bryanPanel.classList.toggle("flex-0");
-  bryanPanel.classList.toggle("flex-1");
-  bryanPanel.classList.toggle("w-0");
-
-  johnmarcInfo.classList.toggle("flex-0");
-  johnmarcInfo.classList.toggle("flex-2");
-  johnmarcInfo.classList.toggle("w-0");
+    togglePanel(johnmarcInfo, reccaPanel, bryanPanel);
 });
 
+johnmarcClose.addEventListener("click", () => {
+    togglePanel(johnmarcInfo, reccaPanel, bryanPanel);
+});
+
+// Bryan
 bryanImg.addEventListener("click", () => {
-  reccaPanel.classList.toggle("flex-0");
-  reccaPanel.classList.toggle("flex-1");
-  reccaPanel.classList.toggle("w-0");
+    togglePanel(bryanInfo, reccaPanel, johnmarcPanel);
+});
 
-  johnmarcPanel.classList.toggle("flex-0");
-  johnmarcPanel.classList.toggle("flex-1");
-  johnmarcPanel.classList.toggle("w-0");
-
-  bryanInfo.classList.toggle("flex-0");
-  bryanInfo.classList.toggle("flex-2");
-  bryanInfo.classList.toggle("w-0");
+bryanClose.addEventListener("click", () => {
+    togglePanel(bryanInfo, reccaPanel, johnmarcPanel);
 });
